@@ -1,7 +1,7 @@
 #include <Stdio.h>
 #include <math.h>
 #include <string.h>
-//program to find the sum and avg  of the given numbers
+//program to find the sum and avg  of the given numbers.
 
 int main(){
     int a,b,c;
