@@ -13,7 +13,7 @@ int main(){
 
 } 
 
-//program to convert celsius to fahrenheit and vice versa
+//program to convert celsius to fahrenheit and vice versa.
 int main(){
     float a;
     char ch;
