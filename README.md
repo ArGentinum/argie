@@ -1,1 +1,1 @@
-i am just beginning my tech career
+i am currently working on c language basic programs , i have pushed my changes so far for the programs that i ve done in c in the file basics2.c, check it out and please do drop any suggestions regarding anything.
