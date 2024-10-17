@@ -13,13 +13,12 @@ for(i=0;i<x;++i){
         scanf("%d",&a[i][j]);
     }
 }
-
 int b[50][50],x1,y1;
 printf("enter the number of rows for B: ");
 scanf("%d",&x1);
 printf("entet the number of columns for B: ");
 scanf("%d",&y1);
-
+if(y==x1){
 for(i1=0;i1<x1;++i1){
     for(j1=0;j1<y1;++j1){
         printf("b[%d][%d]: ",i1,j1);
@@ -38,9 +37,11 @@ for(i=0;i<x;i++,zero=0,one=1){
              ++m;
             n+=a[i][j]*b[i1][j1];
     }
-    printf("%3d",n);
+    printf("%5d",n);
 }
 printf("\n");
 }
-
+}
+else
+printf("\nMatrix multiplication is not possible");
 }
