@@ -540,6 +540,38 @@ void main(){
     }
 }
 
+//program to transpose a matrix
+void main(){
+    int a[50][50],i,j,x,y,k;
+    printf("enter the number of rows: ");
+    scanf("%d",&x);
+    printf("enter the number of columns: ");
+    scanf("%d",&y);
+    //loop for reading values into 2d matrix
+    for(i=0;i<x;++i){
+        for(j=0;j<y;++j){
+            printf("a[%d][%d]",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<x;++i){
+        for(j=0;j<y;++j){
+            if(i==j)
+            printf("%5d",a[i][j]);
+            else{
+                k=i;
+                i=j;
+                j=k;
+                printf("%5d",a[i][j]);
+                k=i;
+                i=j;
+                j=k;
+            }
+        }
+        printf("\n");
+    }
+}
+
 
 
 
