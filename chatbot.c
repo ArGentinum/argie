@@ -572,6 +572,25 @@ void main(){
     }
 }
 
+//program to eliminate duplicate characters in an array
+void main(){
+    int a[]={1,2,5,6,8,5,8,4},i,k;
+    int b= sizeof(a)/sizeof a[2];
+    
+    for(i=0;i<b;++i){
+        for(k=i;k!=0;--k){
+            if(a[i]==a[(k-1)])
+            break;
+            
+        }
+        if(k==0)
+        printf("%d,",a[i]);
+            
+        
+    }
+    
+}
+
 
 
 
