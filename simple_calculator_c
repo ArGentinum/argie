@@ -1,0 +1,33 @@
+
+
+
+
+
+#include <stdio.h>
+int main(){
+    printf("\t\t\t skibidi calculator");
+    printf("\n\t\t1.addition");
+    printf("\n\t\t2.substraction");
+    printf("\n\t\t3.multiplication");
+    int ch;
+    float a,b;
+    printf("\npick ur choice: ");
+    scanf("%d",&ch);
+    printf("enter the numbers ");
+    scanf("%f%F",&a,&b);
+    switch(ch){
+    case 1: 
+    printf("%f",a+b);
+    break;
+    case 2:
+    printf("%f",a-b);
+    break;
+    case 3:
+    printf("%f",a*b);
+    break;
+    default:
+    printf("pls enter correct choice");
+    }
+    return 0;
+    
+}

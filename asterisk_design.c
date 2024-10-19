@@ -217,15 +217,15 @@ void main(){
 
 //c program to print a diamond structure with characters only on the borders
 void main(){
-    int a,b,c,d,e,f,g=0;
+    int a,b,c,d,e,f,g=0,cnt=0;
     printf("enter the max number of rows: ");
     scanf("%d",&a);
     for(b=1;b<=a;++b){
         for(d=b;d<a;++d){
             printf(" ");
         }
-        for(c=0;c<b;++c){
-            if((c==0)||((b-c)==1)||c%4==0)
+        for(c=0,cnt=0;c<b;++c,++cnt){
+            if((c==0)||((b-c)==1)||cnt==1||(b-c)==2)
             printf(" *");
         else
         printf("  ");
@@ -236,8 +236,8 @@ void main(){
         for(d=1;d<b;++d){
             printf(" ");
         }
-        for(c=b;c<=a;++c){
-            if(c==b||a==c||c%4==0)
+        for(c=b,cnt=0;c<=a;++c,++cnt){
+            if(c==b||a==c||cnt==1||(a-c)==1)
             printf(" *");
         else
         printf("  ");
