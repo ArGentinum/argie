@@ -2,7 +2,7 @@
 #include <math.h>
 #include <string.h>
 //program to find the sum and avg  of the given numbers
-
+/*
 int main(){
     int a,b,c;
     printf("enter the numbers: ");
@@ -506,16 +506,20 @@ void main(){
         printf("enter correct choice");
     }
 }
-
+*/
 //c program to store and print numbers in an a 1d array using loop 
 
 int max;
 void main(){
-    int a[max],b;
+    //VIP
+    //initialising max must be done before declaring the actual array
+    //as declaring the array before initialising max, tends to undefined behaviour of array
+
     printf("enter the maxsize: ");
-    scanf("%d",&max);
+    scanf("%d",&max);        
+    int a[max],b;
     for(b=0;b<max;++b){
-        printf("a[%d]: ",b);                       //program error
+        printf("a[%d]: ",b);     
         scanf("%d",&a[b]);  
     }
     printf("\n");
@@ -524,13 +528,13 @@ void main(){
     }
 }
 
-
+/*
 int max;
 void main(){
     int a[50],b;
     printf("enter the maxsize: ");
     scanf("%d",&max);
-    for(b=0;b<max;++b){                              //program error
+    for(b=0;b<max;++b){                             //undefined behaviour of array, as the variable 'max' has been initialised after the declaration of the array
         printf("a[%d]: ",b);
         scanf("%d",&a[b]);  
     }
@@ -590,6 +594,40 @@ void main(){
     }
     
 }
+
+//program to find ascii values of characters and vice versa
+#include <stdio.h>
+void main(){
+    char a,ch;
+    char x='N',y;
+    int b;
+    printf("\na.ascii to char values converter\nb.char to ascii values converter\nenter ur choice:");
+    scanf("%c",&ch);
+    switch(ch){
+        case 'a': 
+        for(y=x;y=='N';y=x){
+        printf("enter the number:");
+        scanf("%d",&b);
+    printf("\n ASCII value is:%c",b);
+    printf("\n\ndo u wish to exit the terminal?\nclick Y if yes\nclick N if no\n\nenter ur choice:");
+    scanf(" %c",&x);
+    }
+        break;
+
+        case 'b':
+    for(y=x;y=='N';y=x){
+        printf("enter the character: ");
+    scanf(" %c",&a);
+    printf("\n ASCII value is:%d",a);
+    printf("\n\ndo u wish to exit the terminal?\nclick Y if yes\nclick N if no\n\nenter ur choice:");
+    scanf(" %c",&x);
+    }
+    break;
+
+    default :printf("enter the correct choice");
+    }
+}
+*/
 
 
 
