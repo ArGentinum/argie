@@ -2,7 +2,7 @@
 #include <math.h>
 #include <string.h>
 //program to find the sum and avg  of the given numbers
-/*
+
 int main(){
     int a,b,c;
     printf("enter the numbers: ");
@@ -506,7 +506,7 @@ void main(){
         printf("enter correct choice");
     }
 }
-*/
+
 //c program to store and print numbers in an a 1d array using loop 
 
 int max;
@@ -528,7 +528,7 @@ void main(){
     }
 }
 
-/*
+
 int max;
 void main(){
     int a[50],b;
@@ -627,7 +627,7 @@ void main(){
     default :printf("enter the correct choice");
     }
 }
-*/
+
 
 
 
