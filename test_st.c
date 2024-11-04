@@ -1,6 +1,7 @@
 // program only works for decimal values upto 1023 . why?
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 /*
 int main(){
      int a,b,c=1,cnt;
@@ -23,9 +24,10 @@ int main(){
     return 0;
 }
 */
+//c program to convert decimal numbers to their binary values and vice versa
 int main() {
     char a[20],b[20];
-    int i,x,y,j;
+    int i,x,y,j,zero;
     printf("1.decimal to binary conversion\n2.binary to decimal conversion\n\nenter ur choice:");
     scanf("%d",&x);
     switch(x){
@@ -34,7 +36,6 @@ int main() {
             scanf("%d",&y);
         for(i=0;y!=0;++i,y=y/2){
             a[i]=(y%2==0?'0':'1');
-            printf("%c",a[i]);
         }
         a[i]='\0';
         for(j=(strlen(a)-1);j>=0;--j){
@@ -43,13 +44,25 @@ int main() {
         }
         
         break;
+
+        case 2 :
+        zero=0;
+        y=0;
+        printf("enter the binary number: ");
+        scanf("%s",&a);
+        for(i=(strlen(a)-1);i>=0;--i,++zero){
+            if(a[i]=='0')
+            continue;
+        if(a[i]=='1')
+         y+=pow(2,zero);
+        }
+        printf("the decimal value is:%d",y);
+        break;
         
         default :
-        ;
+        printf("enter the correct choice");
         break;
     }
-    
-
     return 0;
 }
 
