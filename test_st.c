@@ -23,18 +23,33 @@ int main(){
     return 0;
 }
 */
-
-void main(){
-    char b[20];
-    int i,j;  
-    puts("enter the number:");
-    gets(b);
-    int c=strlen(b);
-    for(i=0;i<strlen(b);++i,--c){
-        for(j=0;j<c;++j){
-            printf("%c",b[j]);
+int main() {
+    char a[20],b[20];
+    int i,x,y,j;
+    printf("1.decimal to binary conversion\n2.binary to decimal conversion\n\nenter ur choice:");
+    scanf("%d",&x);
+    switch(x){
+        case 1:
+        printf("enter the number: ");
+            scanf("%d",&y);
+        for(i=0;y!=0;++i,y=y/2){
+            a[i]=(y%2==0?'0':'1');
+            printf("%c",a[i]);
         }
-        printf("\n");
+        a[i]='\0';
+        for(j=(strlen(a)-1);j>=0;--j){
+            printf("%c",a[j]);
+            
+        }
+        
+        break;
+        
+        default :
+        ;
+        break;
     }
-    }
+    
+
+    return 0;
+}
 
