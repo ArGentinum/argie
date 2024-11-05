@@ -1,7 +1,6 @@
 // program only works for decimal values upto 1023 . why?
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 /*
 int main(){
      int a,b,c=1,cnt;
@@ -54,7 +53,7 @@ int main() {
             if(a[i]=='0')
             continue;
         if(a[i]=='1')
-         y+=pow(2,zero);
+         y+=1<<zero;
         }
         printf("the decimal value is:%d",y);
         break;
