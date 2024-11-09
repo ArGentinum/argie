@@ -2,7 +2,7 @@
 #include <math.h>
 #include <string.h>
 //program to find the sum and avg  of the given numbers
-
+/*
 int main(){
     int a,b,c;
     printf("enter the numbers: ");
@@ -627,6 +627,52 @@ void main(){
     default :printf("enter the correct choice");
     }
 }
+
+// c program to find the largest number of an integer array
+int max;
+void main(){
+    printf("enter the max size of array:");
+    scanf("%d",&max);
+    int a[max],i,j=0;
+    for(i=0;i<max;++i){
+        printf("a[%d]:",i);
+        scanf("%d",&a[i]);
+    }
+    //for loop for initialising 'j' with the largest number
+    for(i=0;i<max;++i){
+        if(j<a[i])
+        j=a[i];
+    }
+    printf("the largest number in the array is %d",j);
+}
+
+*/
+//c program to find the second largest number of an integer array
+int max;
+void main(){
+    printf("enter the max size of the array:");
+    scanf("%d",&max);
+    int a[max],i,j,x=0,y=0;
+    for(i=0;i<max;++i){
+        printf("a[%d]:",i);
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<max;++i){
+        if(x<a[i])
+        x=a[i];
+       
+    
+    for(j=0;j<i;++j){
+        if(y<a[j]&&a[j]<x)
+        y=a[j];
+    }
+   
+    }
+    printf("the largest number is %d",x);
+    printf("\nthe 2nd largest number is %d",y);
+}
+
+
 
 
 
