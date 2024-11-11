@@ -1,6 +1,7 @@
 #include <Stdio.h>
 #include <math.h>
 #include <string.h>
+int max;
 //program to find the sum and avg  of the given numbers
 /*
 int main(){
@@ -662,7 +663,7 @@ void main(){
         x=a[i];
        
     
-    for(j=0;j<i;++j){
+    for(j=0;j<=i;++j){
         if(y<a[j]&&a[j]<x)
         y=a[j];
     }
@@ -671,6 +672,59 @@ void main(){
     printf("the largest number is %d",x);
     printf("\nthe 2nd largest number is %d",y);
 }
+/*
+//c program to print unique elements in an array
+void main(){
+    printf("enter the max size:");
+    scanf("%d",&max);
+    int a[max],i,j,swap;
+    //for loop for reading elements into the array
+    for(i=0;i<max;++i){
+        printf("a[%d]:",i);
+        scanf("%d",&a[i]);
+    }
+    //nested for loop method for overwriting similar elements to 0
+    for(i=0;i<max;++i,swap=0){
+        for(j=0;j<max;++j){
+            if(a[i]==a[j]&&i!=j){
+            a[j]=0;
+            ++swap;
+            }
+        }
+        if(swap!=0)
+        a[i]=0;
+    }
+    //for loop for printing elements in the array excluding 0's
+    for(i=0;i<max;++i){
+        if(a[i]!=0)
+        printf("%d,",a[i]);
+    }
+}
+
+
+
+//c program to eliminate duplicate elements in an integer array
+void main(){
+    printf("enter the max size:");
+    scanf("%d",&max);
+    int a[max],i,j,swap=0;
+    //for loop for reading elements into the array
+    for(i=0;i<max;++i){
+        printf("a[%d]:",i);
+        scanf("%d",&a[i]);
+    }
+    //for loop method for eliminating duplicate elements int the array
+    for(i=0;i<max;++i,swap=0){
+        for(j=0;j<i;++j){
+            if(a[i]==a[j])
+            ++swap;
+        }
+        if(swap==0)
+        printf("%d,",a[i]);
+    }
+    
+}
+*/
 
 
 

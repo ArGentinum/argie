@@ -41,7 +41,7 @@
     }  
 }
 
-
+*/
 
 //c program to print an interesting shape using asterisks
 // *IMP ADD SPACES AFTER EXECUTION TEST*
@@ -87,7 +87,7 @@ void main(){
     }
 }
 
-
+/*
 //c program to print a basic pyramid
 void main(){
     int a,b,c,d,e;
@@ -213,7 +213,7 @@ void main(){
     }
 
 }
-*/
+
 
 //c program to print a diamond structure with characters only on the borders
 void main(){
@@ -246,7 +246,7 @@ void main(){
         printf("\n");
     }
 }
-
+*/
 
 
 
