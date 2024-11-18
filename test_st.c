@@ -41,7 +41,7 @@ int main() {
             printf("%c",a[j]);
             
         }
-        
+         
         break;
 
         case 2 :
