@@ -178,7 +178,7 @@ void main(){
     scanf("%d",&row);
     printf("enter the number of columns: ");
     scanf("%d",&colmn);
-    int a[row][colmn],i,j,b[row][colmn],c[row][colmn],k,n=0,pow;
+    int a[row][colmn],i,j,b[row][colmn],c[row][colmn],k,n=0,pow1;
     for(i=0;i<row;++i){
         for(j=0;j<colmn;++j){
             printf("a[%d][%d]:",i,j);
@@ -194,9 +194,10 @@ void main(){
         printf("\n");
     }
     printf("\n\n");
-    printf(enter the power of the matrix:);
-    scanf("%d",&pow);
-    for()
+    
+    printf("enter the power of the matrix:");
+    scanf("%d",&pow1);
+    for(int count=1;count<pow1;++count){
     for(i=0;i<row;++i,n=0){
         for(j=0;j<colmn;++j,n=0){
             for(k=0;k<colmn;++k){
@@ -212,6 +213,7 @@ void main(){
                 b[i][j]=c[i][j];
             }
         }
+    }
 
         printf("    =?\n");
         for(i=0;i<row;++i){
