@@ -62,7 +62,7 @@ int n;
     scanf("%f",&r);
 printf("enter the frequency of compunding interest in a year:");
 scanf("%d",&n);
-printf("amount returned after %d  years is %f",t,p*pow(1+r/(100*n),n*t);
+printf("amount returned after %d  years is %f",(int)(t),p*pow(1+r/(100*n),n*t));
     return 0;
 }
 
