@@ -79,17 +79,34 @@ int main(){
 
 
 //c program to print the area of a triangle using heron's formula
-void main(){
-    float a,b,c;
-    float area;
-    scanf("%f%f%f",&a,&b,&c);
-    if (c>a+b)
-    printf("enter s3 value less than the sum of s1 and s2  ");
-    else{
-    float s=(a+b+c)/2;
-    area = sqrt(s*(s-a)*(s-b)*(s-c));
-    printf(" area of the triangle is : %f",area);
+
+int num(float a,float b,float c){
+    if(a>=b+c)
+    return 0;
+    else return 1;
+}
+
+int main() {
+    float x,y,z;
+    int check;
+    printf("enter 3 sides of the triangle:");
+    scanf("%f%f%f",&x,&y,&z);
+    int d=(x>y?x:y)>z?(x>y?x:y):z;
+    if (d==x)
+    check=num(x,y,z);
+    if(d==y)
+    check=num(y,z,x);
+    if(d==z)
+    check=num(z,x,y);
+    if(check==1){
+    float s=(x+y+z)/2;
+    printf("area of triangle is:%f",sqrt(s*(s-x)*(s-y)*(s-z)));
     }
+    else 
+    printf("triangle cannot be formed");
+    
+
+    return 0;
 }
 
 
