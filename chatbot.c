@@ -177,7 +177,7 @@ void main(){
     printf("c= ");
     scanf("%f",&c);
     if ((pow(b,2))-4*a*c<0)
-    printf("there are no imaginary root/roots for this quadratic equation");
+    printf("there are no real roots for this quadratic equation");
     else 
     printf("roots of the quadratic equation are:%f,%f",(-b+sqrt(pow(b,2)-4*a*c))/(2*a),(-b-sqrt(pow(b,2)-4*a*c))/(2*a));
 }
