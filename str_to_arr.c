@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 void str_to_arr(char c[],int size,int a[]){
     int i,j;
     char k;
@@ -25,9 +26,14 @@ int arr_to_var(int arr[],int size){
 
 }
 void main(){
-    char x[100000];
+    //char x[100000];
+    char *x=(char *)malloc(10000000);
     int in=1;
-    int y[100000],num,i,j,z[100000],carry=0;
+    //int y[100000];
+    int *y=(int *)malloc(10000000);
+    int num,i,j;
+    int *z=(int *)malloc(10000000);
+    int carry=0;
     printf("enter the number:");
     scanf("%s",x);
     int s=strlen(x);
