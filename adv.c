@@ -209,3 +209,12 @@ int main(){
     printf("false");
 }
 
+
+int main(){
+    int a=2*1024*1024*1024;
+    if(a<0)
+    printf("true");
+    else
+    printf("false");
+}
+
