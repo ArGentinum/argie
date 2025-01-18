@@ -200,3 +200,12 @@ void main(){
 
     }
 
+
+int main(){
+    char a='a',b='b',c=a+b;
+    if(c>'c')
+    printf("true");
+    else
+    printf("false");
+}
+
