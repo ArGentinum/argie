@@ -3,7 +3,7 @@
 void bsort(int x,int *ptr){
     int i,j,swap,ex;
     for(i=0;i<x;++i){
-        for(j=i+1;ptr[j]<ptr[j-1]&&j!=0;--j){
+        for(j=i+1;ptr[j]<ptr[j-1]&&j!=0&&j!=x;--j){
             swap=ptr[j];
             ptr[j]=ptr[j-1];
             ptr[j-1]=swap;
@@ -25,9 +25,10 @@ int main() {
         scanf("%d",&a[i]);
     }
     bsort(max,a);
-    for(i=0;i<max;++i){
+    /*for(i=0;i<max;++i){
         printf("%d,",a[i]);
     }
+    */
 
     return 0;
 }
